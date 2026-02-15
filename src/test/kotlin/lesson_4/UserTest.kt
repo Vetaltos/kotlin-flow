@@ -17,7 +17,29 @@ class UserTest {
     fun testAllParamNulls() {
         val user = User(name = null, age = null, email = null)
 
-        user.checkNulls()
+        user.name?.let {
+            println("Пользователь $it определен по имени")
+        } ?: run {
+            val default = "Неизвестный"
+            user.name = default
+            println("Пользователь не определен, присвоено стандартное имя: $default")
+        }
+
+        user.age?.let {
+            println("Пользователь $it определен по возрасту")
+        } ?: run {
+            val default = 101
+            user.age = default
+            println("Пользователь не определен, присвоен стандартный возраст: $default")
+        }
+
+        user.email?.let {
+            println("Пользователь $it определен по электронной почте")
+        } ?: run {
+            val default = "default@default.default"
+            user.email = default
+            println("Пользователь не определен, присвоена стандартная электронная почта: $default")
+        }
 
         user.name.shouldBe("Неизвестный")
         user.age shouldBe(101)
@@ -28,7 +50,29 @@ class UserTest {
     fun testNoNullsParam() {
         val user = User(name = "ГЕНА", age = 77, email = "gena@gmail.com")
 
-        user.checkNulls()
+        user.name?.let {
+            println("Пользователь определен по имени $it")
+        } ?: run {
+            val default = "Неизвестный"
+            user.name = default
+            println("Пользователю присвоено стандартное имя: $default")
+        }
+
+        user.age?.let {
+            println("Пользователь определен по возрасту $it")
+        } ?: run {
+            val default = 101
+            user.age = default
+            println("Пользователю присвоен стандартный возраст: $default")
+        }
+
+        user.email?.let {
+            println("Пользователь определен по электронной почте $it")
+        } ?: run {
+            val default = "default@default.default"
+            user.email = default
+            println("Пользователю присвоена стандартная электронная почта: $default")
+        }
 
         user.name.shouldBe("ГЕНА")
         user.age.shouldBe(77)

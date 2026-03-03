@@ -1,4 +1,4 @@
-package lesson_2.homework
+package homework_lessons.lesson_2.homework
 
 import io.kotest.matchers.shouldBe
 import io.qameta.allure.Feature

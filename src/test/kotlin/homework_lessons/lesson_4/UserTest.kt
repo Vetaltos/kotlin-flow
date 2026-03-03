@@ -1,4 +1,4 @@
-package lesson_4
+package homework_lessons.lesson_4
 
 
 import io.kotest.matchers.shouldBe

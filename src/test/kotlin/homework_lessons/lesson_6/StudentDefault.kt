@@ -1,4 +1,4 @@
-package lesson_6
+package homework_lessons.lesson_6
 
 val defaultStudent = Student(
     studentName = "Стандартный Студент",

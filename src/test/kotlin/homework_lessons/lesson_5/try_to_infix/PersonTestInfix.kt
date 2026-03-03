@@ -1,4 +1,4 @@
-package lesson_5.try_to_infix
+package homework_lessons.lesson_5.try_to_infix
 
 import org.junit.jupiter.api.Test
 

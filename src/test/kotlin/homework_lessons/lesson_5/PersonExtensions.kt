@@ -1,13 +1,15 @@
-package lesson_5.try_to_infix
+package homework_lessons.lesson_5
 
-fun validatePerson(person: PersonInfix): List<String> {
+
+
+fun Person.validate(): List<String> {
     val errors = mutableListOf<String>()
 
-    if(person.name.isNullOrBlank()) {
+    if(name.isNullOrBlank()) {
         errors.add("Имя не может быть пустым")
     }
 
-    if(person.age < 18) {
+    if(age < 18) {
         errors.add("Возраст должен быть не меньше 18 лет")
     }
 

@@ -1,4 +1,4 @@
-package lesson_6
+package homework_lessons.lesson_6
 
 enum class StudentEnum(val studentName: String, val age: Int, val group: String) {
     DEFAULT("Стандартный Студент", 99, "QA-777"),

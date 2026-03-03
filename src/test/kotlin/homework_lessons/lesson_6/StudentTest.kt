@@ -1,4 +1,4 @@
-package lesson_6
+package homework_lessons.lesson_6
 
 import io.kotest.matchers.shouldBe
 import org.junit.jupiter.api.Test

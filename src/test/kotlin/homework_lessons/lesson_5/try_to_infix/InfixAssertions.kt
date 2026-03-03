@@ -1,4 +1,4 @@
-package lesson_5.try_to_infix
+package homework_lessons.lesson_5.try_to_infix
 
 import io.kotest.matchers.collections.shouldBeEmpty
 import io.kotest.matchers.collections.shouldContain

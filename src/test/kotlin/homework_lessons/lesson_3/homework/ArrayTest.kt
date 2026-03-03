@@ -1,4 +1,4 @@
-package lesson_3.homework
+package homework_lessons.lesson_3.homework
 
 import io.kotest.matchers.collections.shouldBeEmpty
 import io.kotest.matchers.collections.shouldContain
